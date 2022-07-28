@@ -1,7 +1,7 @@
 import React from "react";
 
 function Cakes({ cakes }) {
-  console.log(cakes);
+  console.log(cakes.length);
   if (cakes.length > 0) {
     return cakes.map((cake, index) => {
       return (
