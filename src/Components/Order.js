@@ -1,16 +1,12 @@
-import React from 'react'
-import "./Order.css"
-import Navbar from './Navbar'
+import React from "react";
+import "./Order.css";
 
 const Order = () => {
   return (
-      <div>
-          <Navbar />
-          <div>
-              Order
-          </div>
+    <div>
+      <div>Order</div>
     </div>
-  )
-}
+  );
+};
 
-export default Order
+export default Order;

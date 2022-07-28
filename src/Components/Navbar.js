@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -19,19 +18,19 @@ const Navbar = () => {
       </div>
       <div className={click ? "nav-icon active" : " nav-icon"}>
         <div className="navbar-container">
-          <Link to="./cakes" className="nav-link">
+          <Link to="cakes" className="nav-link">
             Cakes
           </Link>
-          <Link to="./wedding" className="nav-link">
+          <Link to="wedding" className="nav-link">
             Wedding Cakes
           </Link>
-          <Link to="./birthday" className="nav-link">
+          <Link to="birthday" className="nav-link">
             Birthday Cakes
           </Link>
-          <Link to="./price" className="nav-link">
-            PrIce
+          <Link to="price" className="nav-link">
+            Price
           </Link>
-          <Link to="./order" className="nav-link">
+          <Link to="order" className="nav-link">
             Order
           </Link>
         </div>

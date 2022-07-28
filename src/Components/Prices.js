@@ -1,16 +1,7 @@
-import React from 'react'
-import "./Prices.css"
-import Navbar from './Navbar'
+import React from "react";
 
 const Prices = () => {
-  return (
-      <div>
-          <Navbar />
-          <div>
-              Prices
-          </div>
-    </div>
-  )
-}
+  return <div>Prices</div>;
+};
 
-export default Prices
+export default Prices;
