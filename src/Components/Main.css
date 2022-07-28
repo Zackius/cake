@@ -29,10 +29,17 @@ p{
 
 }
 .icons{
-    background-color: black;
     color : black;
     display: inline;
+    padding: 30px;
+text-align: center;
+
 }
-div span {
-    size: 40px;
+.icons>span {
+  padding: 40px;
+  font-size: 30px;
 }
+.icons-span{
+    size: 100px;
+}
+

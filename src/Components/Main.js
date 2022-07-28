@@ -1,7 +1,12 @@
 import React from "react";
 import "./Main.css";
 import img1 from "../images/pieces.jpg";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Main = () => {
   return (
@@ -20,14 +25,17 @@ const Main = () => {
           numquam nesciunt, natus illo mollitia aute
         </p>
         <div className="icons">
-          <span>
-            <FontAwesomeIcon icon="fa-brands fa-instagram" />
+          <span className="icons-span">
+            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
           </span>
           <span>
-            <FontAwesomeIcon icon="fa-brands fa-twitter" />
+            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
           </span>
           <span>
-            <FontAwesomeIcon icon="fa-brands fa-facebook" />
+            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faTiktok}></FontAwesomeIcon>
           </span>
         </div>
       </div>
