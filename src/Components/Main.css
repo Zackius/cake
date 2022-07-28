@@ -28,3 +28,11 @@ p{
     float: left;
 
 }
+.icons{
+    background-color: black;
+    color : black;
+    display: inline;
+}
+div span {
+    size: 40px;
+}

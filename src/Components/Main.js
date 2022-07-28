@@ -1,11 +1,12 @@
 import React from "react";
 import "./Main.css";
 import img1 from "../images/pieces.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Main = () => {
   return (
     <section className="main">
-      <div >
+      <div>
         <img className="images" src={img1} alt="cakes" />
       </div>
       <div className="main-div">
@@ -18,6 +19,17 @@ const Main = () => {
           elit. Minus, fugiat exercitationem dolor adipisci eos eum voluptate
           numquam nesciunt, natus illo mollitia aute
         </p>
+        <div className="icons">
+          <span>
+            <FontAwesomeIcon icon="fa-brands fa-instagram" />
+          </span>
+          <span>
+            <FontAwesomeIcon icon="fa-brands fa-twitter" />
+          </span>
+          <span>
+            <FontAwesomeIcon icon="fa-brands fa-facebook" />
+          </span>
+        </div>
       </div>
     </section>
   );
