@@ -18,19 +18,19 @@ const Navbar = () => {
       </div>
       <div className={click ? "nav-icon active" : " nav-icon"}>
         <div className="navbar-container">
-          <Link to="/" className="nav-link">
+          <Link to="./cakes" className="nav-link">
             Cakes
           </Link>
-          <Link to="/" className="nav-link">
+          <Link to="./wedding" className="nav-link">
             Wedding Cakes
           </Link>
-          <Link to="/" className="nav-link">
+          <Link to="./birthday" className="nav-link">
             Birthday Cakes
           </Link>
-          <Link to="/" className="nav-link">
+          <Link to="./price" className="nav-link">
             PrIce
           </Link>
-          <Link to="/" className="nav-link">
+          <Link to="./order" className="nav-link">
             Order
           </Link>
         </div>

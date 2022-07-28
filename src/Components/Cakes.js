@@ -1,8 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const Cakes = () => {
-  return <div>Cakes</div>;
+  return (
+    <div>
+      <Navbar />
+      <div>Cakes</div>
+    </div>
+  );
 };
 
 export default Cakes;
