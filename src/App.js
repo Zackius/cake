@@ -12,6 +12,7 @@ function App() {
         <Route path="navbar" element={<Navbar />} />
       </Routes>
       <Main />
+      
     </div>
   );
 }
