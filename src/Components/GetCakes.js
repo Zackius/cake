@@ -13,8 +13,9 @@ function GetCakes() {
     axios
       .get("http://localhost:3000/cakes")
       .then((response) => {
-        const allCakes = response.data;
-        setCakes(allCakes);
+        
+        setCakes(response.data);
+        
       })
       .catch((err) => {
         return err.response;

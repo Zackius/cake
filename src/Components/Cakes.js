@@ -1,29 +1,22 @@
 import React from "react";
 
 function Cakes({ cakes }) {
-  console.log(cakes.length);
-  if (cakes.length > 0) {
-    return cakes.map((cake, index) => {
-      return (
-        <div key={index}>
+
+  if (!cakes) return null;
+  
+  return cakes.map((cake, index) => {
+    return (
+      <div key={index}>
+        <div>
           <div>
-            <div>
-              <img className="images" src={cake.image} alt={cake.name} />
-              <p> {cake.cake}</p>
-              <p>{cake.description}</p>
-            </div>
+            <img className="images" src={cake.image} alt={cake.name} />
+            <p> {cake.cake}</p>
+            <p>{cake.description}</p>
           </div>
         </div>
-      );
-    });
-  }
-  return (
-    <div className="ui four column grid">
-      <div className="row">
-        <div></div>
       </div>
-    </div>
-  );
+    );
+  });
 }
 
 export default Cakes;
