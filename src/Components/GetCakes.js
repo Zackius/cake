@@ -2,25 +2,24 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Cakes from "./Cakes";
 
-
 function GetCakes() {
-  const [cake, setCake] = useState("");
+  const [cakes, setCakes] = useState("");
 
   useEffect(() => {
-    getCake();
+    getAllCakes();
   }, []);
 
-  const getCake = () => {
+  const getAllCakes = () => {
     axios
       .get("http://localhost:3000/cakes")
       .then((response) => {
         const allCakes = response.data;
-        setBolt(allCakes);
+        setCakes(allCakes);
       })
       .catch((err) => {
         return err.response;
       });
   };
-  return <Cakes cake={cake} />;
+  return <Cakes cakes={cakes} />;
 }
 export default GetCakes;
