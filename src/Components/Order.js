@@ -1,32 +1,10 @@
 import React, { useState } from "react";
 import "./Order.css";
+import Cakes from "./Cakes";
 
-const Order = () => {
+const Order = ({cakes}) => {
   const [cakes, setCakes] = useState([]);
-  const [cakeName, setCakeName] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
-  const [numberOfKgs, setNumberOfKgs] = useState("");
-  const[cakesId, setCakesId] = useState(null)
-
-  useEffect(() => {
-    getCakes();
-  }, [])
-  function updateCakes() {
-    let item = { cakeName, imageUrl, numberOfKgs };
-
-    fetch(`http://localhost:3000/cakes${cakesId}`, {
-      method: "PUT",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(item),
-    }).then((result) => {
-      result.json().then((resp) => {
-        getUsers();
-      });
-    });
-  }
+ 
 
   return (
     <div className="main">
