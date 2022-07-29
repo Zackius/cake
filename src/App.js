@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Main from "./Components/Main";
 import Wedding from "./Components/Wedding";
-import Birthday from "./Components/Birthday";
+import Birthday from "./Components/Cakes";
 import Prices from "./Components/Prices";
 import Order from "./Components/Order";
 
