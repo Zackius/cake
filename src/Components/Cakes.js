@@ -1,25 +1,36 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const Birthday = () => {
-  const [cakes, setCakes] = useState("");
+const Cakes = () => {
+  const [cakes, setCakes] = useState([]);
 
   useEffect(() => {
-    getCakes();
+    getAllCakes();
   }, []);
-
-  function getCakes() {
+  const getAllCakes = () => {
     axios
       .get("http://localhost:3000/cakes")
-      .then((resp) => {
-        const allCakes = resp.data;
+      .then((response) => {
+        const allCakes = response.data;
         setCakes(allCakes);
-        console.log();
       })
-      .catch((error) => console.error(`Error $(error)`));
+      .catch((err) => {
+        console.log(err.response);
+      });
+  };
+  if (cakes.length > 0) {
+    return cakes.map((cake) => {
+      return (
+          <div className="images" key={cake.id}>
+            <img src={cake.image} alt={cake.name} />
+                 <p>{cake.name }</p>
+        </div>
+      )
+        })
+  } else {
+    return null
+    }
   }
-  console.log(cakes);
-  return { cakes };
-};
 
-export default Birthday;
+
+export default Cakes;
