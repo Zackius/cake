@@ -21,18 +21,12 @@ const Navbar = () => {
           <Link to="cakes" className="nav-link">
             Cakes
           </Link>
-          <Link to="wedding" className="nav-link">
-            Wedding Cakes
-          </Link>
-          <Link to="birthday" className="nav-link">
-            Birthday Cakes
-          </Link>
-          <Link to="price" className="nav-link">
-            Price
-          </Link>
           <Link to="order" className="nav-link">
             Order
           </Link>
+          <Link to="contact " className="nav-link">
+            Contact
+          </Link>{" "}
         </div>
       </div>
     </nav>

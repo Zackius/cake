@@ -4,7 +4,23 @@ import "./Order.css";
 const Order = () => {
   return (
     <div>
-      <div>Order</div>
+      <div>
+        <form>
+          <label>
+            {" "}
+            Cakes Flavor:
+            <input type="text" />
+          </label>
+          <label>
+            Image
+            <input type="url" />{" "}
+          </label>
+          <label>
+            Number of KGs
+            <input type="number" />
+          </label>
+        </form>
+      </div>
     </div>
   );
 };

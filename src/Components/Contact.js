@@ -1,7 +1,7 @@
 import React from "react";
-import "./Footer.css";
+import "./Contact.css";
 
-const Footer = () => {
+const Contact = () => {
   return (
     <div className="footer">
       <section>
@@ -23,4 +23,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Contact;
