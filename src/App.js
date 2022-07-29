@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Main from "./Components/Main";
-import Cakes from "./Components/Cakes";
 import Wedding from "./Components/Wedding";
 import Birthday from "./Components/Birthday";
 import Prices from "./Components/Prices";
@@ -15,8 +14,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="cakes" element={<Cakes />} />
-
         <Route path="wedding" element={<Wedding />} />
         <Route path="birthday" element={<Birthday />} />
         <Route path="price" element={<Prices />} />
