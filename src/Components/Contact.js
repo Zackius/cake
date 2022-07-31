@@ -1,6 +1,12 @@
 import React from "react";
 import "./Contact.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
+
 const Contact = () => {
   return (
     <div className="footer">
@@ -9,15 +15,20 @@ const Contact = () => {
         <p>
           <span>Email</span> balmybakes@gmail.com
         </p>
-        <p>
-          <span>Phone No.</span> 0717117260
-        </p>
-        <p>
-          <span>Instagram</span>Balmy_Bakes
-        </p>
-        <p>
-          <span>Facebook</span>
-        </p>
+        <div className="icons">
+          <span className="icons-span">
+            <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faTiktok}></FontAwesomeIcon>
+          </span>
+        </div>
       </section>
     </div>
   );

@@ -1,24 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Order.css";
-import Cakes from "./Cakes";
 
-const Order = ({cakes}) => {
-  const [cakes, setCakes] = useState([]);
- 
+const Order = () => {
 
   return (
     <div className="main">
       <div className="inputOrder">
-        <form className="list" onClick={handleSubmit}>
+        <form className="list">
           <label>
             <h4>Cakes Flavor</h4>
             <input
               className="gap"
-              value={cakeName}
               type="text"
-              onChange={(e) => {
-                setCakeName(e.target.value);
-              }}
+      
             />
           </label>
           <label>
@@ -26,10 +20,6 @@ const Order = ({cakes}) => {
             <input
               className="gap"
               type="url"
-              value={imageUrl}
-              onChange={(e) => {
-                setImageUrl(e.target.value);
-              }}
             />
           </label>
           <label>
@@ -37,14 +27,10 @@ const Order = ({cakes}) => {
             <input
               className="gap"
               type="number"
-              value={numberOfKgs}
-              onChange={(e) => {
-                setNumberOfKgs(e.target.value);
-              }}
             />
           </label>
           <div className="btn">
-            <input onClick={updateCakes} type="submit" />
+            <input  type="submit" />
           </div>
         </form>
       </div>
